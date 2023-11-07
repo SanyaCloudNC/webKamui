@@ -1,7 +1,7 @@
 <?php 
     if(!isset($_SESSION['id'])){
 ?>
-<nav class="navbar navbar-expand-lg " style="background-color: #D3D3D3;">
+<nav class="navbar navbar-expand-lg " style="background-color: 	#FF7F00;">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php"><i class="bi bi-house-door-fill"></i>Home</a>
       <ul class="navbar-nav">
@@ -12,7 +12,7 @@
   </div>
 </nav>
 <?php }else{ ?>
-<nav class="navbar navbar-expand-lg " style="background-color: #D3D3D3;">
+<nav class="navbar navbar-expand-lg " style="background-color: 	#FF7F00;">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php"><i class="bi bi-house-door-fill"></i>Home</a>
       <ul class="navbar-nav">
