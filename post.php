@@ -22,7 +22,7 @@
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
                 <?php 
-                    $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","cddslcdhve","130H216G76Y5GH0F$");
+                $conn = new PDO("mysql:host=sanya.mariadb.database.azure.com;dbname=webboard;charset=utf8","Sanya@sanya","130H216G76Y5GH0F$");
                 $sql="SELECT t1.title,t1.content,t2.login,t1.post_date FROM post as t1 
                 INNER JOIN user as t2 ON (t1.user_id=t2.id) where t1.id=$_GET[id]"; 
                 $result=$conn->query($sql);
@@ -36,7 +36,7 @@
                 ?>
                 <br>
                 <?php
-                    $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","cddslcdhve","130H216G76Y5GH0F$");
+                 $conn = new PDO("mysql:host=sanya.mariadb.database.azure.com;dbname=webboard;charset=utf8","Sanya@sanya","130H216G76Y5GH0F$");
                 $sql="SELECT t1.content,t2.login,t1.post_date FROM comment as t1 INNER JOIN user as t2 ON (t1.user_id=t2.id) where t1.post_id=$_GET[id] ORDER BY t1.post_date";
                 $result=$conn->query($sql);
                 $i=1;
