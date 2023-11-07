@@ -30,7 +30,7 @@
                 <ul class="dropdown-menu" aria-labelledby="Button2">
                     <li><a href="#" class="dropdown-item">ทั้งหมด</a></li>
                     <?php 
-                        $conn=new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","root","");
+                            $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","cddslcdhve","130H216G76Y5GH0F$");
                         $sql="SELECT * FROM category";
                         foreach($conn->query($sql) as $row){
                             echo "<li><a class=dropdown-item href=#>$row[name]</a></li>";
@@ -44,7 +44,7 @@
     <br>
     <table class="table table-striped">
         <?php
-            $conn=new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","root","");
+                $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","cddslcdhve","130H216G76Y5GH0F$");
             $sql="SELECT t3.name,t1.title,t1.id,t2.login,t1.post_date FROM post as t1 INNER JOIN user as t2 ON (t1.user_id=t2.id) INNER JOIN category as t3 ON (t1.cat_id=t3.id) ORDER BY t1.post_date DESC";
             $result=$conn->query($sql);
             while($row=$result->fetch()){
@@ -75,7 +75,7 @@
                 <ul class="dropdown-menu" aria-labelledby="Button2">
                     <li><a href="#" class="dropdown-item">ทั้งหมด</a></li>
                     <?php 
-                        $conn=new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","root","");
+                            $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","cddslcdhve","130H216G76Y5GH0F$");
                         $sql="SELECT * FROM category";
                         foreach($conn->query($sql) as $row){
                             echo "<li><a class=dropdown-item href=#>$row[name]</a></li>";
@@ -91,7 +91,7 @@
     <br>
     <table class="table table-striped">
         <?php
-            $conn=new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","root","");
+                $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","cddslcdhve","130H216G76Y5GH0F$");
             $sql="SELECT t3.name,t1.title,t1.id,t2.login,t1.post_date FROM post as t1 INNER JOIN user as t2 ON (t1.user_id=t2.id) INNER JOIN category as t3 ON (t1.cat_id=t3.id) ORDER BY t1.post_date DESC";
             $result=$conn->query($sql);
             while($row=$result->fetch()){

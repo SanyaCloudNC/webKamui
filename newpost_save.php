@@ -9,7 +9,7 @@
     $comm=$_POST['comment'];
     $user=$_SESSION['user'];
     //echo "$cate";
-    $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","root","");
+    $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","cddslcdhve","130H216G76Y5GH0F$");
     
     $sql = "INSERT INTO post (title,content,post_date,cat_id,user_id) VALUES ('$top','$comm',NOW(),'$cate','$user')";
     $conn->exec($sql);

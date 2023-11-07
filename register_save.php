@@ -12,7 +12,7 @@
     $gender = $_POST['gender'];
     $email = $_POST['email'];
 
-    $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","root","");
+    $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","cddslcdhve","130H216G76Y5GH0F$");
     
     $sql = "SELECT * FROM user where login='$login'";
     
