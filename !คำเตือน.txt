@@ -1,0 +1,9 @@
+ไฟล์ที่เป็น .php จะต้องใช้ xampp ในการรันไฟล์
+
+ไฟล์ที่ใช้งานจะต้องอยู่ในแฟ้มของ xampp ที่ชื่อว่า htdocs
+
+เข้า xampp >> Start Apache
+
+เปิด Chrome >> พิมพ์	localhost/ที่อยู่ไฟล์/ไฟล์ที่ต้องการเลือกเปิด
+
+EX// localhost/webkamui/index.php
